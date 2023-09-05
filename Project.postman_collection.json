@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "c1f8550e-0dee-4ef5-8790-2453a10d3b5a",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MenuCtrl Get All Menu Order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/menu/gelAllMenu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu",
+						"gelAllMenu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MenuCtrl Get MenuById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/menu/getMenuById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu",
+						"getMenuById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MenuCtrl Get addMenuItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"gulab Jamun2\",\r\n\"description\" : \"Sweet\",\r\n\"imageAddress\":\"./images/Gulab_Jamun.jpg\",\r\n\"type\":\"dessert\",\r\n\"category\": \"veg\",\r\n\"size\": \"small\",\r\n\"variant\": \"hand made\",\r\n\"price\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/menu/AddMenuItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu",
+						"AddMenuItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MenuCtrl  del Menu",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pizzaMenu/delete/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pizzaMenu",
+						"delete",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MenuCtrl UpdaMenu",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"menuId\": 11,\r\n\"name\": \"gulab Jamun2\",\r\n\"description\" : \"Sweet and testy\",\r\n\"imageAddress\":\"./images/Gulab_Jamun.jpg\",\r\n\"type\":\"dessert\",\r\n\"category\": \"veg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pizzaMenu/updatePizzaInDatabase",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pizzaMenu",
+						"updatePizzaInDatabase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrdersCtrl updOrderStatus",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"orderStatus\": \"accepted\",\r\n\"paymentStatus\": \"pending\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/acceptOrder/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"acceptOrder",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrdersCtrl orders/UserId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/orders/userOrderById/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"userOrderById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SizesCtrl size/Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sizes/getSizeById/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sizes",
+						"getSizeById",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SizesCtrl DelSize",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sizes/delete/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sizes",
+						"delete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserCtrl user/Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserCtrl register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"firstName\":\"customer22\",\r\n\"lastName\":\"customer22\",\r\n\"email\":\"customer22@gmail.com\",\r\n\"password\": \"customer22\",\r\n\"mobileNo\" : \"12345667890\",\r\n\"address\": \"customer22\",\r\n\"role\": \"customer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VariantCtrl  variant/SizeFk",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/variants/getById/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"variants",
+						"getById",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VariantCtrl  variant/IdPk",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/variants/getVariantById/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"variants",
+						"getVariantById",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VariantCtrl  variant/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/variants/delete/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"variants",
+						"delete",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VariantCtrl  variant/Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"sizeId\": 29,\r\n\"variantId\": 46,\r\n\"variant\": \"fully Hand Made\",\r\n\"price\": 5000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/variants/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"variants",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VariantCtrl  AddVariant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sizeId\": 29,\r\n\"variant\": \"Hand tossed\",\r\n\"price\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/variants/AddNewVariant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"variants",
+						"AddNewVariant"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

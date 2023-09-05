@@ -1,0 +1,33 @@
+PURPOSE- 
+To ease the pizza online ordering system which will give easy access to end
+user to order and customize pizzas and also to give the control of management 
+to admin which can add/edit/delete pizzas and their prices. It will help the company to
+grow across the region and generate more revenue as well as employment. 
+Also as a part of academics we have chosen this case study so that
+we can apply our learning in practical scenario. 
+--------------------------------------------------------------------------------------------------------------
+SCOPE- 
+1.project goals- to develope a online pizza ordering system which helps both admin and end user 
+to efficeintly use the technology to ease his work.
+2.outcomes- It will give priviledge to customer to get pizza delivery at home without going
+physically at store and get it at few clicks. In case of admin, it gives priviledges like
+taking orders and getting some extra gain through delivery charges and reducing cost of manpower 
+which requires at store as serving the customers requires more manpower and also
+using minimum space to reduce cost of infrastructure
+3.tasks- to design and develope the application system which is user friendly 
+so that anyone can use it easily and deploy it on server and maintain it.
+4.costs- by negotiating with client made a deal.
+--------------------------------------------------------------------------------------------------------------
+WORKFLOW- 
+1.requirement analysis-client requirements,what is to be done, which technology is to be used,why this technology,
+how to implement that technology, distribution of work among team.
+2.database design MySQL.
+3.making of backend with the help of java lang and spring boot framework.
+4.connecting it to database,
+5.backend testing it by using postman
+6.developing of frontend with the help of JavaScript lang and react framework
+7.connecting it to the backend.
+8.testing it after configuration with backend
+9.decorated with the help of bootstrap.
+10.after final testing deploying it on cloud.
+11.presenting it to the client.
